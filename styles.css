@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer {
+    background-color: bisque;
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    border: burlywood 3.5px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameHeading h1 {
+    margin-top: 0px;
+}
+
+#roundNum {
+    background-color: #0dcaf0;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#status {
+    margin-bottom: 0px;
+    background-color: #6b7785;
+    color: white;
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.gameCardContainer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.gameCard {
+    text-align: center;
+    padding: 10px;
+}
+
+#humanScore, #computerScore {
+    background-color: #6b7785;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+
+.gameImg {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    background-color: #093c8a;
+    border: white 2px solid;
+    border-radius: 5px;
+}
+
+.gameImg.human {
+    transform: scaleX(-1);
+}
+
+.gameButtonContainer input[type=text] {
+    width: 150px;
+    height: 35px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.gameButtonContainer button {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 8px 24px;
+    border: #0d6efd 2px solid;
+    border-radius: 5px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.gameButtonContainer button:hover {
+    background-color: #093c8a;
+    border: #093c8a 2px solid;
+}
+
+.gameButtonContainer button:active {
+    background-color: #093d8a81;
+    border: #093d8a81 2px solid;
+}
+
+#roundButtonContainer {
+    display: none;
+}
+
+#continueBtn {
+    background-color: #198754;
+    border: #198754 2px solid;
+}
+
+#continueBtn:hover {
+    background-color: #105334;
+    border: #105334 2px solid;
+}
+
+#continueBtn:active {
+    background-color: #10533481;
+    border: #10533481 2px solid;   
+}
+
+#restartBtn {
+    background-color: #dc3545;
+    border: #dc3545 2px solid;
+}
+
+#restartBtn:hover {
+    background-color: #88232d;
+    border: #88232d 2px solid;
+}
+
+#restartBtn:active {
+    background-color: #88232d80;
+    border: #88232d80 2px solid;   
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="gameContainer">
+        <div class="gameHeading">
+        <h1>Rock, Paper, Scissors!</h1>
+        <h3>Round <span id="roundNum">1</span></h3>
+        <h4 id="status">Start!</h4>
+        </div>
+        <div class="gameCardContainer">
+            <div class="gameCard">
+                <p>Score: <span id="humanScore">0</span></p>
+                <img src="./images/rock.png" alt="An image of fist" class="gameImg human" id="humanImg">
+                <p>You</p>
+            </div>
+            <h3>vs</h3>
+            <div class="gameCard">
+                <p>Score: <span id="computerScore">0</span></p>
+                
+                <img src="./images/rock.png" alt="An image of fist" class="gameImg computer" id="computerImg">
+                <p>Computer</p>
+            </div>
+        </div>
+        <div class="gameButtonContainer">
+            <p>Click an option:</p>
+            <div id="optionButtonContainer">
+            <button id="rockBtn">Rock</button>
+            <button id="paperBtn">Paper</button>
+            <button id="scissorBtn">Scissors</button>
+            </div>
+            <div id="roundButtonContainer">
+            <button id="continueBtn">Next Round</button>
+            <button id="restartBtn">Restart</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
